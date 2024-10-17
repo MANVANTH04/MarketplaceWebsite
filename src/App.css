@@ -1,0 +1,101 @@
+body{
+    background-color: #181C14; /* Dark Forest Green */
+    color: #ECDFCC; /* Soft Cream for text color */
+    font-family: Arial, sans-serif; /* Example font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.custom-button {
+    background-color: #697565; /* Muted Olive */
+    color: #ECDFCC; /* Soft Cream */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical | Horizontal padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.custom-button:hover {
+    background-color: #3C3D37; /* Charcoal Gray on hover */
+}
+
+
+/* Main Navigation Styles */
+.main-nav {
+    display: flex;                    /* Use flexbox for layout */
+    justify-content: space-between;   /* Space out nav items */
+    align-items: center;              /* Center items vertically */
+    background-color: #181C14;        /* Dark Forest Green background */
+    padding: 10px 20px;               /* Padding for the navbar */
+}
+
+/* Left, Middle, and Right Navigation Links */
+.left-navlinks,
+.middle-navlinks,
+.right-navlinks {
+    display: flex;                    /* Use flexbox for horizontal alignment */
+    align-items: center;              /* Center items vertically */
+}
+
+/* Navitem Styles */
+li {
+    list-style: none;                 /* Remove default list styling */
+    margin: 0 15px;                  /* Horizontal spacing between items */
+}
+
+/* Link Styles */
+.navcolor {
+    color: #ECDFCC;                   /* Soft Cream for link color */
+    text-decoration: none;            /* Remove underline from links */
+    font-size: 16px;                 /* Font size for links */
+    transition: color 0.3s;          /* Smooth transition for hover effect */
+}
+
+/* Hover effect for Navitem Link */
+.navcolor:hover {
+    color: #697565;                  /* Muted Olive on hover */
+}
+
+/* Active link styling */
+.navcolor.active {
+    font-weight: bold;               /* Bold font for the active link */
+    color: #3C3D37;                  /* Charcoal Gray for active link */
+    border-bottom: 2px solid #697565; /* Optional underline effect for active link */
+}
+
+/* Optional styling for logo */
+.logo {
+    font-weight: bold;                /* Bold font for logo */
+    font-size: 20px;                  /* Larger font size for logo */
+}
+
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;                /* Position dropdown relative to parent */
+    background-color: #181C14;        /* Match the navbar background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for dropdown */
+    border-radius: 5px;               /* Rounded corners */
+    padding: 10px 0;                  /* Padding around items */
+    z-index: 1000;                    /* Ensure dropdown appears above other elements */
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    list-style: none;                 /* Remove default list styling */
+}
+
+.dropdown-menu .navcolor {
+    display: block;                   /* Full-width links */
+    padding: 8px 16px;               /* Padding for dropdown items */
+    color: #ECDFCC;                   /* Soft Cream color */
+    text-decoration: none;            /* Remove underline */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu .navcolor:hover {
+    background-color: #697565;       /* Muted Olive on hover */
+}
