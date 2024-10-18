@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Home from './Pages/Home'
-import Navitem from './Components/Navitem'
-import Navbar from './Components/Navbar'
 import Categories from './Pages/Categories'
 import Sellitem from './Pages/Sellitem'
 import React from 'react';
@@ -15,13 +13,13 @@ function App() {
 
   return (
     <Router>
-      <Home />
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/categories" component={Categories} />
-        <Route path="/sellitem" component={Sellitem} />
-
-        <Route path="/cart" component={Cart} />
+        <Route exact path="/" element={<Home/>} />
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/logo' element= {<Home/>}/>
+        <Route path="/categories" element={<Categories/>} />
+        <Route path="/sellitem" element={<Sellitem/>} />
+        <Route path="/cart" element={<Cart/>} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

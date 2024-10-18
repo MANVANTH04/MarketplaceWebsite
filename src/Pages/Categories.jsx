@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <div>
+    <Navbar/>
+    </div>
   )
 }
 

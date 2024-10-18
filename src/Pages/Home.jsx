@@ -8,12 +8,13 @@ import RecentlyListedCard from "../Components/RecentlyListedCard";
 import Testimonials from "../Components/Testimonials";
 import React from 'react';
 import Herosection from "../Components/Herosection";
+import CategorySection from "../Components/CategorySection";
 
 const Home = () => {
   return (
     <div>
     <Herosection/>
-    <Button name= {"Add to Cart"}/>
+    <CategorySection/>
     </div>
   )
 }
