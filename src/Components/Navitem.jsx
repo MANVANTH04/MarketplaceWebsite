@@ -29,9 +29,7 @@ const Navitem = (props) => {
   return (
     <li className="nav-link nav-item">
       <NavLink 
-        className="navcolor" 
-        to={`/${ props.name.toLowerCase()}`} 
-        activeClassName="active" 
+        className="navcolor" to={`/${ props.name.toLowerCase()}`} activeClassName="active" 
         onClick={props.isDropdown ? toggleDropdown : null} // Toggle dropdown on click if it is dropdown
       >
         {props.name}

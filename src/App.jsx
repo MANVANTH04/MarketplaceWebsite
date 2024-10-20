@@ -27,3 +27,6 @@ function App() {
 }
 
 export default App
+
+
+// 100+items , 20+ categories, 300+users

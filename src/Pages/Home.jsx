@@ -15,6 +15,7 @@ const Home = () => {
     <div>
     <Herosection/>
     <CategorySection/>
+    <Footer/>
     </div>
   )
 }

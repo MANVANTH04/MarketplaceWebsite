@@ -1,8 +1,11 @@
 import React from 'react'
 
-const BlogCard = () => {
+const BlogCard = (props) => {
   return (
-    <div>BlogCard</div>
+    <div className='blogcard-main'>
+    <img src={`${props.name}`} alt="Girl in a jacket" width="500" height="600"></img>
+    
+    </div>
   )
 }
 
