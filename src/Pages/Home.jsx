@@ -13,7 +13,7 @@ import CategorySection from "../Components/CategorySection";
 const Home = () => {
   return (
     <div>
-    <Herosection/>
+    <Herosection/>  
     <CategorySection/>
     <Footer/>
     </div>
