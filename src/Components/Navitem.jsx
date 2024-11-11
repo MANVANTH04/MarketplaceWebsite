@@ -26,14 +26,22 @@ const Navitem = (props) => {
     setIsOpen((prev) => !prev);
   };
 
+  let p = props.name.replaceAll(' ','')
   return (
     <li className="nav-link nav-item">
       <NavLink 
-        className="navcolor" to={`/${ props.name.toLowerCase()}`} activeClassName="active" 
+  
+        className="navcolor" to={`/${p.toLowerCase()}`} activeClassName="active" 
         onClick={props.isDropdown ? toggleDropdown : null} // Toggle dropdown on click if it is dropdown
       >
         {props.name}
       </NavLink>
+
+
+
+
+
+
 
       {/* Dropdown Menu */}
       {props.isDropdown && isOpen && (

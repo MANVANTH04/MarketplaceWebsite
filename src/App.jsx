@@ -35,43 +35,38 @@ function App() {
 
 
   const allnavlinks = [
-    { component: Home, path: "home" },
-    { component: Categories, path: "categories" },
-    { component: Sellitem, path: "sellitem" },
-    { component: Cart, path: "cart" },
-    { component: Privacypolicy, path: "userinformation/privacypolicy" },
-    { component: Signup, path: "signup" },
-    { component: Blog, path: "community/blog" },
-    { component: About, path: "about/aboutus" },
-    { component: Herosection, path: "herosection" },
-    { component: Cookiepolicy, path: "legal/cookiepolicy" },
-    { component: Termsandconditions, path: "legal/termsandconditions" },
-    { component: Campusevents, path: "community/campusevents" },
-    { component: Userrevies, path: "community/userrevies" },
-    { component: Helpcenter, path: "userinformation/helpcenter" },
-    { component: ReturnRefundpolicy, path: "userinformation/returnrefundpolicy" },
-    { component: Aboutus, path: "about/aboutus" },
-    { component: Contactus, path: "about/contactus" },
-    { component: Howitworks, path: "about/howitworks" },
-    { component: Books, path: "categoriess/books" },
-    { component: Clothing, path: "categoriess/clothing" },
-    { component: Electronics, path: "categoriess/electronics" }
-  ];
+    Home,
+    Categories,
+    Sellitem,
+    Cart,
+    Privacypolicy,
+    Signup,
+    Blog,
+    About,
+    Herosection,
+    Cookiepolicy,
+    Termsandconditions,
+    Campusevents,
+    Userrevies,
+    Helpcenter,
+    ReturnRefundpolicy,
+    Aboutus,
+    Contactus,
+    Howitworks,
+    Books,
+    Clothing,
+    Electronics
+  ]
 
 
   return (
     <Router>
       <Routes>
         <Route  path="/" element={<Home/>} />
-        {allnavlinks.map(({component:Component, path}, index) => (
-      <Route key={index} path={`/${path}`} element={<Component/>} />
-    ))}
+        {allnavlinks.map((Path, index) => (
+      <Route key={index} path={`/${Path}`} element={<Path/>} />
+     ))}
         
-       {/* <Route path='/logo' element= {<Home/>}/>
-        <Route path="/categories" element={<Categories/>} />
-        <Route path="/sellitem" element={<Sellitem/>} />
-        <Route path="/cart" element={<Cart/>} />
-        {/* Add more routes as needed */}
       </Routes>
     </Router>
   )
